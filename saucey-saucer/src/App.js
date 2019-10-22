@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./App.css";
 import HorizontalScroll from "./components/HorizontalScroll/HorizontalScroll";
+import BeerScroll from "./components/HorizontalScroll/BeerScroll";
 import MyBeers from "./components/MyBeers/MyBeers";
+import Home from "./components/Home/Home";
 import { Tab, Tabs } from "react-bootstrap";
 function App() {
   return (
     <div className="App">
       <Tabs className="navtab" defaultActiveKey="home">
-        <Tab eventKey="home" title="Home"></Tab>
+        <Tab eventKey="home" title="Home">
+          <Home />
+        </Tab>
         <Tab eventKey="searchBeer" title="Find me Beer">
           <hr style={{ border: "2px solid green" }} />
           <h3 style={{ color: "white" }}>Lager</h3>

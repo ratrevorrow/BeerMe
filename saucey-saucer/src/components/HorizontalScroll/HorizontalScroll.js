@@ -10,7 +10,9 @@ import Ranger from "../../resources/beers/nb-ranger.png";
 import SlowRide from "../../resources/beers/nb-slow-ride.png";
 
 function HorizontalScroll() {
+  const [scrollData, setScrollData] = React.useState(null);
   const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div className="scrolling-wrapper-flexbox">
       <Card bg="dark" text="white" onClick={() => setModalShow(true)}>

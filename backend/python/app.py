@@ -21,7 +21,14 @@ def get_beer_list():
             # create
             beerlist[item['style']] = [item]
 
-    return jsonify(beerlist)
+    beers = []
+    for style, objects in beerlist.items(): 
+        beers.append({
+            'style': style,
+            'beers': objects
+        })
+
+    return jsonify(beers)
 
 if __name__ == "__main__":
     app.run()

@@ -18,14 +18,14 @@ function Home() {
         </Card.Body>
       </Card>
       <hr style={{ border: "2px solid green" }} />
-      <h3 style={{ color: "white" }}>Suggestions</h3>
-      <BeerScroll />
+      <h3 style={{ color: "white" }}>Suggested For You</h3>
+      {/* <BeerScroll /> */}
       <hr style={{ border: "2px solid green" }} />
       <h3 style={{ color: "white" }}>Popular at this Saucer</h3>
-      <BeerScroll />
+      {/* <BeerScroll /> */}
       <hr style={{ border: "2px solid green" }} />
       <h3 style={{ color: "white" }}>Events coming up</h3>
-      <BeerScroll />
+      {/* <BeerScroll /> */}
     </div>
   );
 }

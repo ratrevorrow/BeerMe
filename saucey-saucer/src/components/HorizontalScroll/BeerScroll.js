@@ -1,112 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./horizontal-scroll.css";
 import { Card } from "react-bootstrap";
 import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
 
-function BeerScroll() {
+function BeerScroll(props) {
   const [modalShow, setModalShow] = React.useState(false);
+  const [beers, setBeers] = React.useState(null);
+  const [style, setStyle] = React.useState("");
 
-  const beers = [
-    {
-      brewery: "New Belgium",
-      beer: "Fat Tire",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Citradellic",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Hoppy Blonde",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Ranger",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Slow Ride",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Fat Tire",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Citradellic",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Hoppy Blonde",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Ranger",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Slow Ride",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Fat Tire",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Citradellic",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Hoppy Blonde",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Ranger",
-      style: "Lager"
-    },
-    {
-      brewery: "New Belgium",
-      beer: "Slow Ride",
-      style: "Lager"
-    }
-  ];
+  useEffect(() => {
+    setStyle(props.beerStyle.style);
+    getBeerList(props.beerStyle.beers);
+  }, []);
 
-  const beerList = beers.map((beer, idx) => (
-    <Card bg="dark" text="white" key={idx} onClick={() => setModalShow(true)}>
-      <Card.Body>
-        <Card.Title>{beer.brewery}</Card.Title>
-        <Card.Text>
-          {beer.beer}●{beer.style}
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Checked in 3 mins ago</small>
-      </Card.Footer>
-    </Card>
-  ));
+  const getBeerList = beers => {
+    setBeers(
+      beers.map((beer, idx) => (
+        <Card
+          bg="dark"
+          text="white"
+          key={idx}
+          onClick={() => setModalShow(true)}
+        >
+          <Card.Body>
+            <Card.Title>{beer.brewery}</Card.Title>
+            <Card.Text>
+              {beer.beer} ● {beer.style}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Checked in 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      ))
+    );
+  };
 
   return (
-    <div className="scrolling-wrapper-flexbox">
-      {beerList}{" "}
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
+    <div>
+      <hr style={{ border: "2px solid green" }} />
+      <h3 style={{ color: "white" }}>{style}</h3>
+      <div className="scrolling-wrapper-flexbox">{beers}</div>
     </div>
   );
 }
 
 export default BeerScroll;
+
+{
+  /* <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      /> */
+}

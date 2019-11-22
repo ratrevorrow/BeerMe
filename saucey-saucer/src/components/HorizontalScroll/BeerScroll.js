@@ -25,7 +25,7 @@ function BeerScroll(props) {
           <Card.Body>
             <Card.Title>{beer.brewery}</Card.Title>
             <Card.Text>
-              {beer.beer} ● {beer.style}
+              {beer.name}
             </Card.Text>
           </Card.Body>
           <Card.Footer>

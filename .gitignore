@@ -3,3 +3,4 @@ beer-recommender.py
 geckodriver.log
 output.html
 .vscode
+backend/python/playground.py

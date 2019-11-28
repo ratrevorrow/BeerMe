@@ -146,10 +146,10 @@ function MyBeers() {
           })}
         />
       </Example>
-      <MyVerticallyCenteredModal
+      {/* <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
-      />
+      /> */}
     </div>
   );
 }

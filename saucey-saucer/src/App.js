@@ -24,77 +24,92 @@ function App() {
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         }
       ]
     },
@@ -104,77 +119,92 @@ function App() {
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         }
       ]
     },
@@ -184,77 +214,92 @@ function App() {
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Fat Tire",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Citradellic",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Hoppy Blonde",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Ranger",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         },
         {
           brewery: "New Belgium",
           beer: "Slow Ride",
-          style: "Lager"
+          style: "Lager",
+          description: "Mock description abut the beer..."
         }
       ]
     }

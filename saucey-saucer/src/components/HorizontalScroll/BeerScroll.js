@@ -56,7 +56,7 @@ function BeerScroll(props) {
   return (
     <div>
       <hr style={{ border: "2px solid green" }} />
-      <h3 style={{ color: "white" }}>{style}</h3>
+      <h3 style={{ color: "white", marginLeft: "10px" }}>{style}</h3>
       <div className="scrolling-wrapper-flexbox">{beers}</div>
       {modalShow && modal}
     </div>

@@ -12,27 +12,29 @@ function MyVerticallyCenteredModal(props) {
   };
 
   return (
-    <Accordion>
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            <h4>
-              {props.brewery} ● {props.beer}
-            </h4>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h6>{props.beerstyle}</h6>
-          <p>{props.description}</p>
-        </Modal.Body>
-
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          <h4>
+            {props.brewery} ● {props.beer}
+          </h4>
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h6>{props.beerstyle}</h6>
+        <p>{props.description}</p>
+      </Modal.Body>
+      <Accordion>
         <Modal.Footer>
-          <Accordion.Toggle eventKey="1">
+          <Accordion.Toggle
+            eventKey="1"
+            style={{ border: "none", padding: "0px" }}
+          >
             <Button onClick={() => openQR()} variant="success">
               Check In {props.beer}
             </Button>
@@ -43,8 +45,8 @@ function MyVerticallyCenteredModal(props) {
             <img src={QR} />
           </Accordion.Collapse>
         </Modal.Footer>
-      </Modal>
-    </Accordion>
+      </Accordion>
+    </Modal>
   );
 }
 

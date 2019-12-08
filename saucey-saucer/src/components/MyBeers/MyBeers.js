@@ -131,7 +131,7 @@ function MyBeers() {
           </tr>
         </tbody>
       </Table>
-      <Example label="Progress" onClick={() => setModalShow(true)}>
+      {/* <Example label="Progress" onClick={() => setModalShow(true)}>
         <CircularProgressbar
           color="white"
           value={percentage}
@@ -145,11 +145,8 @@ function MyBeers() {
             trailColor: "transparent"
           })}
         />
-      </Example>
-      {/* <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
+      </Example> */}
+      <div style={{ height: "40px" }}></div>
     </div>
   );
 }

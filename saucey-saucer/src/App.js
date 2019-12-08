@@ -3,19 +3,35 @@ import "./App.css";
 import HorizontalScroll from "./components/HorizontalScroll/HorizontalScroll";
 import BeerScroll from "./components/HorizontalScroll/BeerScroll";
 import SearchBeer from "./components/SearchBeers/SearchBeers";
+import Footer from "./components/Footer/Footer";
 import MyBeers from "./components/MyBeers/MyBeers";
 import Home from "./components/Home/Home";
 import { Tab, Tabs } from "react-bootstrap";
 import { client } from "./util/axios";
 
 function App() {
-  var [beers, setBeers] = useState(null);
+  const [beers, setBeers] = useState(null);
+  const [activeTab, setActiveTab] = useState(null);
 
   useEffect(() => {
     client.get("/beerlist").then(res => {
       setBeers(res.data);
     });
+    setActiveTab(<Home />);
   }, []);
+
+  const chooseTab = tabName => {
+    switch (tabName) {
+      case "search":
+        setActiveTab(<SearchBeer allBeers={mockBeers} />);
+        break;
+      case "folder outline":
+        setActiveTab(<MyBeers />);
+        break;
+      default:
+        setActiveTab(<Home />);
+    }
+  };
 
   const mockBeers = [
     {
@@ -307,17 +323,8 @@ function App() {
 
   return (
     <div className="App">
-      <Tabs className="navtab" defaultActiveKey="home">
-        <Tab eventKey="home" title="Home">
-          <Home />
-        </Tab>
-        <Tab eventKey="searchBeer" title="Find me Beer">
-          <SearchBeer allBeers={mockBeers} />
-        </Tab>
-        <Tab eventKey="saved" title="My Beers">
-          <MyBeers />
-        </Tab>
-      </Tabs>
+      {activeTab}
+      <Footer onClick={chooseTab} />
     </div>
   );
 }

@@ -25,7 +25,7 @@ function App() {
       case "search":
         setActiveTab(<SearchBeer allBeers={mockBeers} />);
         break;
-      case "folder outline":
+      case "trophy":
         setActiveTab(<MyBeers />);
         break;
       default:

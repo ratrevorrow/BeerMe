@@ -16,8 +16,8 @@ const footer = props => {
         style={{ width: "20%", padding: "3%" }}
       />
       <Icon
-        onClick={() => props.onClick("folder outline")}
-        name="folder outline"
+        onClick={() => props.onClick("trophy")}
+        name="trophy"
         style={{ width: "20%", padding: "3%" }}
       />
     </div>

@@ -2,27 +2,30 @@ import React from "react";
 import "./Footer.css";
 import { Icon } from "semantic-ui-react";
 
-const footer = props => {
+function footer(props) {
   return (
     <div className="footer">
       <Icon
         onClick={() => props.onClick()}
         name="home"
+        color={props.activeTabName === "home" ? "green" : ""}
         style={{ width: "20%", padding: "3%" }}
       />
       <Icon
         onClick={() => props.onClick("search")}
         name="search"
+        color={props.activeTabName === "search" ? "green" : ""}
         style={{ width: "20%", padding: "3%" }}
       />
       <Icon
         onClick={() => props.onClick("trophy")}
         name="trophy"
+        color={props.activeTabName === "trophy" ? "green" : ""}
         style={{ width: "20%", padding: "3%" }}
       />
     </div>
   );
-};
+}
 
 export default footer;
 

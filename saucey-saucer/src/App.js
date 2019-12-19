@@ -12,24 +12,34 @@ import { client } from "./util/axios";
 function App() {
   const [beers, setBeers] = useState(null);
   const [activeTab, setActiveTab] = useState(null);
+  const [activeTabName, setActiveTabName] = useState("");
 
   useEffect(() => {
     client.get("/beerlist").then(res => {
       setBeers(res.data);
     });
+    setActiveTabName("home");
     setActiveTab(<Home />);
   }, []);
 
   const chooseTab = tabName => {
     switch (tabName) {
       case "search":
+        setActiveTabName("search");
         setActiveTab(<SearchBeer allBeers={mockBeers} />);
         break;
       case "trophy":
+        setActiveTabName("trophy");
         setActiveTab(<MyBeers />);
         break;
-      default:
+      case "home":
+        setActiveTabName("home");
         setActiveTab(<Home />);
+        break;
+      default:
+        setActiveTabName("home");
+        setActiveTab(<Home />);
+        break;
     }
   };
 
@@ -324,7 +334,7 @@ function App() {
   return (
     <div className="App">
       {activeTab}
-      <Footer onClick={chooseTab} />
+      <Footer onClick={chooseTab} activeTabName={activeTabName} />
     </div>
   );
 }

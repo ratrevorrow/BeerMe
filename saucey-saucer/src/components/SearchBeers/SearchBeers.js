@@ -51,7 +51,7 @@ function SearchBeers(props) {
   return (
     <div>
       <Dropdown
-        placeholder="Choose Styles"
+        placeholder="Search or Filter by Style"
         fluid
         multiple
         search

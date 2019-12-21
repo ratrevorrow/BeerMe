@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import BeerScroll from "../HorizontalScroll/BeerScroll";
 
 import { Dropdown } from "semantic-ui-react";
 
 function SearchBeers(props) {
-  const [modalShow, setModalShow] = React.useState(false);
   const [allBeers, setAllBeers] = React.useState(null);
   const [allStyles, setAllStyles] = React.useState(null);
   const [filteredBeers, setFilteredBeers] = React.useState(null);
@@ -27,17 +26,10 @@ function SearchBeers(props) {
   };
 
   const filterBeers = (e, data) => {
-    console.log(filterSet);
     if (data.value.length === 0) {
       setFilterSet(false);
     } else {
       setFilterSet(true);
-      console.log(data.value);
-      const filteredBeers = [];
-      data.value.forEach(style => {
-        console.log("Elle:" + style);
-        //filteredBeers.push;
-      });
       setFilteredBeers(
         allBeers.map((style, idx) => {
           if (data.value.includes(style.props.beerStyle.style)) {
@@ -61,6 +53,7 @@ function SearchBeers(props) {
       />
       {!filterSet && allBeers}
       {filterSet && filteredBeers}
+      <div style={{ height: "75px" }}></div>
     </div>
   );
 }

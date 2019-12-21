@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./horizontal-scroll.css";
 import { Card } from "react-bootstrap";
 import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
@@ -65,10 +65,3 @@ function BeerScroll(props) {
 }
 
 export default BeerScroll;
-
-{
-  /* <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */
-}

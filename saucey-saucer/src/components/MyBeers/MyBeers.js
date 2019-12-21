@@ -1,44 +1,50 @@
-import React, { useState } from "react";
-import { Table, ButtonToolbar, Button } from "react-bootstrap";
-import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
+import React from "react";
+import { Table } from "react-bootstrap";
 import {
-  CircularProgressbar,
   buildStyles,
   CircularProgressbarWithChildren
 } from "react-circular-progressbar";
-import { Icon, Statistic, Segment } from "semantic-ui-react";
+import { Icon, Statistic } from "semantic-ui-react";
 import "react-circular-progressbar/dist/styles.css";
 
-const percentage = 11;
 const target = 200;
 const consumed = 22;
 
 function MyBeers() {
-  const [modalShow, setModalShow] = React.useState(false);
-
   return (
     <div>
       <Statistic floated="left" inverted>
-        <Statistic.Value>{consumed}</Statistic.Value>
+        <Statistic.Value>
+          {consumed}
+          <Icon name="beer" />
+        </Statistic.Value>
         <Statistic.Label>Consumed</Statistic.Label>
       </Statistic>
-      <CircularProgressbarWithChildren
-        value={target / consumed}
-        text={`${target - consumed}`}
-        styles={buildStyles({
-          textColor: "white",
-          pathColor: "green"
-        })}
-      >
-        <h5 style={{ fontSize: 12, color: "lightgrey", fontFamily: "Lato" }}>
-          {" "}
-          beers to go{" "}
-        </h5>
-      </CircularProgressbarWithChildren>
       <Statistic floated="right" inverted>
-        <Statistic.Value>{target}</Statistic.Value>
-        <Statistic.Label>Next Target</Statistic.Label>
+        <Statistic.Value>
+          {target}
+          <Icon name="beer" />
+        </Statistic.Value>
+        <Statistic.Label>Target</Statistic.Label>
       </Statistic>
+      {/* <div
+        style={{
+          width: "20%",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <CircularProgressbarWithChildren
+          value={target / consumed}
+          text={`${target - consumed}`}
+          styles={buildStyles({
+            textColor: "white",
+            pathColor: "green",
+            alignItems: "center",
+            justifyContent: "center"
+          })}
+        ></CircularProgressbarWithChildren>
+      </div> */}
       <Table striped bordered hover variant="dark">
         <thead>
           <tr>
@@ -49,7 +55,7 @@ function MyBeers() {
           </tr>
         </thead>
         <tbody>
-          <tr onClick={() => setModalShow(true)}>
+          <tr>
             <td>New Belgium</td>
             <td>Fat Tire</td>
             <td>Amber Ale</td>
@@ -159,7 +165,7 @@ function MyBeers() {
           </tr>
         </tbody>
       </Table>
-      <div style={{ height: "50px" }}></div>
+      <div style={{ height: "75px" }}></div>
     </div>
   );
 }

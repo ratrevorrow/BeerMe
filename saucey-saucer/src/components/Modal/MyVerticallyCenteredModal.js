@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Modal, Button, Accordion, AccordionCollapse } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Modal, Button, Accordion } from "react-bootstrap";
 import QR from "../../resources/qr.png";
 
 function MyVerticallyCenteredModal(props) {
-  useEffect(() => {
-    console.log(props);
-  }, []);
+  useEffect(() => {}, []);
 
-  const openQR = () => {
-    console.log("OPEN QR CODE EXPANSION PANEL");
-  };
+  const openQR = () => {};
 
   return (
     <Modal

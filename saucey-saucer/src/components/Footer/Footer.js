@@ -8,19 +8,20 @@ function footer(props) {
       <Icon
         onClick={() => props.onClick()}
         name="home"
-        color={props.activeTabName === "home" ? "green" : ""}
+        color={props.activeTabName === "home" ? "green" : "grey"}
         style={{ width: "20%", padding: "3%" }}
       />
       <Icon
         onClick={() => props.onClick("search")}
         name="search"
-        color={props.activeTabName === "search" ? "green" : ""}
+        color={props.activeTabName === "search" ? "green" : "grey"}
         style={{ width: "20%", padding: "3%" }}
       />
+
       <Icon
         onClick={() => props.onClick("trophy")}
         name="trophy"
-        color={props.activeTabName === "trophy" ? "green" : ""}
+        color={props.activeTabName === "trophy" ? "yellow" : "grey"}
         style={{ width: "20%", padding: "3%" }}
       />
     </div>

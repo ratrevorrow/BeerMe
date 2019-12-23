@@ -23,11 +23,11 @@ function App() {
     switch (tabName) {
       case "search":
         setActiveTabName("search");
-        setActiveTab(<SearchBeer allBeers={mockBeers} />);
+        setActiveTab(<SearchBeer allBeers={mockBeersSearch} />);
         break;
       case "trophy":
         setActiveTabName("trophy");
-        setActiveTab(<MyBeers />);
+        setActiveTab(<MyBeers allBeers={mockBeersMyBeers} />);
         break;
       case "home":
         setActiveTabName("home");
@@ -40,7 +40,7 @@ function App() {
     }
   };
 
-  const mockBeers = [
+  const mockBeersSearch = [
     {
       style: "Style 1",
       beers: [
@@ -517,6 +517,113 @@ function App() {
           description: "Mock description abut the beer..."
         }
       ]
+    }
+  ];
+  const mockBeersMyBeers = [
+    {
+      brewery: "New Belgium",
+      beer: "Fat Tire",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Citradellic",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Hoppy Blonde",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Ranger",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Slow Ride",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Fat Tire",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Citradellic",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Hoppy Blonde",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Ranger",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Slow Ride",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Fat Tire",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Citradellic",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Hoppy Blonde",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Ranger",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
+    },
+    {
+      brewery: "New Belgium",
+      beer: "Slow Ride",
+      style: "Lager",
+      description: "Mock description abut the beer...",
+      timestamp: "12/23/2019 12:15PM "
     }
   ];
 
